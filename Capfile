@@ -54,7 +54,7 @@ end
 
 desc "Install application stack"
 task :install_stack do
-  #fix_locale
+  fix_locale
   install_ruby
   install_rubygems
   install_required_gems

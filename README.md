@@ -52,8 +52,8 @@
 
 ## Installing the stack
 
-`bundle install --path vendor/bundle`
-- Run `bundle exec cap install_stack SERVER=mybox USER=yourusername PORT=2222`
+    bundle install --path vendor/bundle
+    bundle exec cap install_stack SERVER=mybox USER=yourusername PORT=2222
 
 ## License
 
