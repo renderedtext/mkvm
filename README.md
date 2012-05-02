@@ -50,6 +50,14 @@
 - Reconnect to VM with the new 'box' command
 - You can now turnoff the VM and save a snapshot of this blank state
 
+## Configuration
+
+Chef cookbook `postgresql-bootstrap` creates a new user user and database cluster.
+
+Place your username in `node[:postgresql_bootstrap][:username]` in
+`chef/config/main.json`. This should be the username you're using your VM
+with.
+
 ## Installing the stack
 
     bundle install --path vendor/bundle

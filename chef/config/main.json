@@ -1,3 +1,18 @@
 {
-	"run_list": [ "recipe[main]" ]
+  "postgresql": {
+    "password": {
+      "postgres": "secretsauce"
+    }
+  },
+  "postgresql_bootstrap": {
+    "username": "marko",
+    "password": "rtdev",
+    "version": "9.1"
+  },
+  "recipes": [
+    "main",
+    "postgresql",
+    "postgresql::server",
+    "postgresql-bootstrap"
+  ]
 }

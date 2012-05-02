@@ -1,0 +1,39 @@
+{
+  "version": "0.1",
+  "maintainer_email": "devs@renderedtext.com",
+  "groupings": {
+  },
+  "description": "Recipes to set up a UTF-8 cluster, create new user",
+  "recommendations": {
+  },
+  "recipes": {
+    "postgresql-bootstrap": "Requires original postgresql recipe, does nothing",
+    "postgresql-bootstrap::utf8-cluster": "Sets up UTF-8 cluster",
+    "postgresql-bootstrap::create-user": "Creates a new database user"
+  },
+  "attributes": {
+  },
+  "suggestions": {
+  },
+  "dependencies": {
+    "postgresql": []
+  },
+  "platforms": {
+    "debian": [
+
+    ],
+    "ubuntu": [
+
+    ]
+  },
+  "conflicting": {
+  },
+  "long_description": "",
+  "providing": {
+  },
+  "license": "Apache 2.0",
+  "name": "postgresql-bootstrap",
+  "maintainer": "Rendered Text",
+  "replacing": {
+  }
+}

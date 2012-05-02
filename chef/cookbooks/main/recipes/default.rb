@@ -1,9 +1,3 @@
-bash "apt update" do
-  code <<-EOH
-  apt-get --assume-yes update
-  EOH
-end
-
 %w(
   curl
   git-core
