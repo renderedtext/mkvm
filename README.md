@@ -25,16 +25,20 @@
 - Power off the VM
 - Set up port forwarding (from host machine, assuming it's c 2222):
 
+```Bash
     VBoxManage modifyvm "mybox" --natpf1 "rails,tcp,,3000,,3000"
     VBoxManage modifyvm "mybox" --natpf1 "guestssh,tcp,,2222,,22"
+```
 
 - Add these lines to ~/.ssh/config on your host:
 
+```Bash
     Host mybox
       Hostname localhost
       Port     2222
       User     USER_NAME
       ForwardX11 yes
+```
 
 ## Bootstrapping
 
