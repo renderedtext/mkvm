@@ -46,7 +46,9 @@
 - Start the VM
 - Copy the ssh configuration from the host:
 
+```Bash
     rsync -av ~/.ssh mybox:
+```
 
 - ssh into the VM: ssh username@mybox
 - Copy the content of your local `~/.ssh/id_rsa.pub` into `~/.ssh/authorized_keys` on VM
