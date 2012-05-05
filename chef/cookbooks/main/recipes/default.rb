@@ -1,4 +1,5 @@
 %w(
+  ack-grep
   curl
   git-core
   g++
